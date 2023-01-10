@@ -1,0 +1,36 @@
+#Navigation {
+  height: 70px;
+  width: 100vw;
+  background: #000000;
+
+  .nav-inner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 70px;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 45% 45% 1fr;
+
+    .nav-logo {
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      line-height: 70px;
+      grid-column: 2/3;
+    }
+    
+    .nav-links {
+        grid-column: 3/4;
+        text-align: right;
+        a {
+            color: white;
+        }
+        .active {
+            color: #e2aaaa;
+        }
+    }
+  }
+}
