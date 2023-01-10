@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id={"About"}>
       <div className="image-container">
-        <img className="image" src={BannerImage} alt="Picture of Turku University" />
+        <img className="image" src={BannerImage} alt="Turku University" />
       </div>
       <div className="post-container">
         {/* Beginning of the post */}
