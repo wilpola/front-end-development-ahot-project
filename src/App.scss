@@ -3,3 +3,13 @@
 .App {
   font-family: "Inter", sans-serif;
 }
+
+// loader styles
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
