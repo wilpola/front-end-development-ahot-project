@@ -12,13 +12,20 @@ import { Home, About } from "./pages";
 import "./App.scss";
 
 function App() {
+
+  // Create loader state
   const [loader, toggleLoader] = useState(true);
 
   // Mock Loader -> on page load
   useEffect(() => {
+    
+    // test if first load on the site
     if (loader) {
-      console.log("Loader");
+
+      // set 2 second mock loading animation
       setTimeout(() => {
+
+        // remove loader, save to state it ran
         toggleLoader(false);
       }, 2000);
     }
@@ -27,12 +34,16 @@ function App() {
   return (
     // Router to handle different pages
     <Router>
+
+      {/* If first load -> run mock loader */}
       {loader ? (
         <div className="loader">
           <CircleSpinner size={30} color="#686769" loading={loader} />
           <p>Loading</p>
         </div>
       ) : (
+
+        // otherwise show app
         <div className="App">
           {/* Navigation component */}
           <Navigation />
