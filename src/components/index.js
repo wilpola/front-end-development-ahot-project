@@ -2,8 +2,10 @@
 
 // Import components
 import Navigation from "./Navigation";
+import Counter from "./Counter";
 
 // export all the components
 export {
-    Navigation
+    Navigation,
+    Counter
 }

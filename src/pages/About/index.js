@@ -82,6 +82,9 @@ const About = () => {
           </a>{" "}
           vcs to ensure good development practices.
         </p>
+
+        <h3> Design thoughts</h3>
+        <p> The page is build mainly with grid, and flex layouts, which allows flexible component placements, and a chance to build a more responsive site. Responsiveness is not at the forefront, but some work with regards to this has been done, to ensure legeability. I personally like minimalistic designs, and on this site one can see ample use of white space, and simple colors.</p>
       </div>
     </div>
   );

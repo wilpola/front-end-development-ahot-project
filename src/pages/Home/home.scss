@@ -1,0 +1,122 @@
+// styles the Home page
+
+#Home {
+  width: 100%;
+  max-width: 1200px !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto;
+  grid-template-areas:
+    "banner banner"
+    "techno techno"
+    "tech tech"
+    "examplesHeader examplesHeader"
+    "examples examples";
+  position: relative;
+
+  section#banner {
+    grid-area: banner;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    // margin-top: 50px;
+    height: calc(80vh - 70px - 80px);
+
+    .banner-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 2.6rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0 0 10px 0;
+        max-width: 50ch;
+        line-height: 1.5;
+      }
+      button {
+        margin-top: 15px;
+        width: 250px;
+        padding: 14px 20px;
+        border-radius: 1000px;
+        border: solid 1px transparent;
+        font-size: 1rem;
+        background: #9a64ca;
+        color: white;
+        position: relative;
+
+        // hoverarrow styles
+        .hover-arrow {
+          position: absolute;
+          margin-top: -5px;
+          margin-left: -20px;
+          opacity: 0;
+          transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s;
+        }
+
+        // button hover styles
+        &:hover {
+          cursor: pointer;
+          background-color: #7e39bb;
+          padding-left: -5px;
+        }
+        &:hover > .hover-arrow {
+          opacity: 1;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .banner-illustration {
+      margin-left: 30px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  // Technologies header
+  #Techno {
+    grid-area: techno;
+  }
+
+  #Build-with {
+    height: 180px;
+    width: 100%;
+    background: #efefef;
+    grid-area: tech;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    content: contain;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      height: 100px;
+    }
+  }
+  #examples {
+    grid-area: examples;
+    
+  }
+}
+
+// viewport smaller than 1440px
+@media screen and (max-width: 1199px) {
+  #Home {
+    width: 90%;
+    margin: 40px auto;
+  }
+}
