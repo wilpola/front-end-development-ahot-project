@@ -1,0 +1,41 @@
+// This file styles the about page
+
+#About {
+    display: flex;
+    flex-direction: column;
+
+    // styling the image container
+    .image-container {
+        max-height: 500px;
+        width: 80vw;
+        margin: 20px auto;
+        border-radius: 12px;
+        z-index: 10px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 12px;;
+        }
+    }
+
+    .post-container {
+        max-width: 75ch;
+        margin: 20px auto;
+        border-radius: 12px;
+        background-color: #fff;
+        min-height: 300px;
+        padding: 20px;
+        line-height: 1.5;
+        box-shadow: 0 3px 15px #4a4a4a85;;
+        a {
+            text-decoration: none;
+            color:rgb(17, 163, 115);
+            font-weight: 500;
+            &:hover {
+                color: rgb(14, 189, 131)
+            }
+        }
+    }
+}
