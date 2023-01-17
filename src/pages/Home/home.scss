@@ -107,9 +107,23 @@
       height: 100px;
     }
   }
+
+  .example-header {
+    grid-area: examplesHeader;
+  }
+
   #examples {
     grid-area: examples;
-    
+    max-width: 80ch;
+    margin: 0 auto;
+
+    .example-item {
+      width: 100%;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 }
 

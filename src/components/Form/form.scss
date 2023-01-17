@@ -1,0 +1,19 @@
+// This file styles the signin component
+
+form.signin {
+    width: 300px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+        padding: 5px 8px;
+        margin-bottom: 12px;
+    }
+    .sign-in__btn {
+        width: 150px;
+        padding: 10px 12px;
+        margin: 0 auto;
+    }
+}

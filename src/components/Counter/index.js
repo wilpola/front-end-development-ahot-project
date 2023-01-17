@@ -12,7 +12,7 @@ const Counter = () => {
   return (
     <div className="counter-container">
       <button onClick={() => setCount(count - 1)}>-</button>
-      {count}
+      <span>{count}</span>
       <button onClick={() => setCount(count + 1)}>+</button>
     </div>
   );
